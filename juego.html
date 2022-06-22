@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Juego de adivinación</title>
+</head>
+<body>
+<div class="container">
+		<img src="imagenes/circulo.png" alt="" class="circulo" width="50%" height="98%">
+
+	<div class="texto">
+		<h1>JUEGO DE ADIVINACIÓN</h1>
+	   <button class="boton">
+		   <h5>Iniciar el juego</h5>
+	   </button>
+	</div>
+</div>
+<div class="containerJuego">
+	<canvas></canvas>
+	<div class="pyr">
+		<label for="respuesta" class="pregunta"></label>
+		<input type="text" class="respuesta" name="respuesta" onchange="activar()" maxlength="2" placeholder="ingrese un numero">
+		<p class="correccionV"></p>
+		<p class="error"></p>
+		<p class="repetido"></p>
+		<button class="reinicio">Volver a jugar</button>
+	</div>
+	<footer>
+		<h2>Hecho con ❤ desde Argentina</h2>
+	</footer>
+</div>
+
+<script src="main.js"></script>
+<script src="juego.js"></script>
+</body>
+</html>
